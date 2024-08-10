@@ -1,0 +1,17 @@
+- defaults:
+    link:
+      relink: true # Removes the old target if it's a symlink
+      create: true # When true, create parent directories to the link as needed
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.config/tmux:
+    ~/.config/starship.toml:
+    ~/.config/wezterm:
+    ~/.config/git:
+    ~/.config/shell:
+    ~/.zshrc:
+    ~/.config/zsh:
+    ~/.bashrc:
+    ~/.config/bash:
